@@ -1,14 +1,16 @@
-# Project Name: _____ _replace with your particular project name and  type_ _____
+# Project Name: Food For All
 # Modify this document to expand any and all sections that are applicable for a better understanding from your users/testers/collaborators (remove this comment and other instructions areas for your FINAL release)
 
 An online E-store system built in github.io .. etc. <_replace with other platform requirements_>
   
 ## Team 
 <_each team member clones repo and then edits/replace with their name below_>
-- MEMBER01
-- MEMBER02
-- MEMBER03
-- MEMBER04
+Daniel Gramowski
+Jerry Chen
+Ater Dek
+Rylan Arbour
+Danil Donchuk
+
 
 
 ## Prerequisites  <_add anything else that applies_>
