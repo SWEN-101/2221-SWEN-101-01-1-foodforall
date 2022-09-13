@@ -5,10 +5,10 @@ An online E-store system built in github.io .. etc. <_replace with other platfor
   
 ## Team 
 <_each team member clones repo and then edits/replace with their name below_>
+-Daniel Gramowski
+-Jerry Chen
 - Rylan Arbour
-- MEMBER02
-- MEMBER03
-- MEMBER04
+
 
 
 ## Prerequisites  <_add anything else that applies_>
