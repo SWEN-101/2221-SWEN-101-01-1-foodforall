@@ -8,6 +8,7 @@ An online E-store system built in github.io .. etc. <_replace with other platfor
 -Daniel Gramowski
 -Jerry Chen
 -Danil Donchuk
+-Ater Dek
 
 
 
