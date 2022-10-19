@@ -19,7 +19,9 @@ namespace FoodForAll
 
 		private void RegisterLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
 		{
-			//TODO
+			Register new_register_window = new Register(this);
+			new_register_window.Show();
+			this.Hide();
 		}
 
 		private void SignInButton_Click(object sender, EventArgs e)

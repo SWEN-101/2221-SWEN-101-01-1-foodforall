@@ -29,7 +29,7 @@
 		private void InitializeComponent()
 		{
 			this.LogoText = new System.Windows.Forms.Label();
-			this.SigninText = new System.Windows.Forms.Label();
+			this.RegisterText = new System.Windows.Forms.Label();
 			this.UsernameText = new System.Windows.Forms.Label();
 			this.UsernameBox = new System.Windows.Forms.TextBox();
 			this.label1 = new System.Windows.Forms.Label();
@@ -44,22 +44,22 @@
 			this.LogoText.AutoSize = true;
 			this.LogoText.Font = new System.Drawing.Font("Comic Sans MS", 26.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.LogoText.ForeColor = System.Drawing.Color.DarkOrange;
-			this.LogoText.Location = new System.Drawing.Point(13, 13);
+			this.LogoText.Location = new System.Drawing.Point(12, 9);
 			this.LogoText.Name = "LogoText";
 			this.LogoText.Size = new System.Drawing.Size(221, 49);
 			this.LogoText.TabIndex = 0;
 			this.LogoText.Text = "Food For All";
 			// 
-			// SigninText
+			// RegisterText
 			// 
-			this.SigninText.AutoSize = true;
-			this.SigninText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.SigninText.ForeColor = System.Drawing.SystemColors.Control;
-			this.SigninText.Location = new System.Drawing.Point(247, 107);
-			this.SigninText.Name = "SigninText";
-			this.SigninText.Size = new System.Drawing.Size(254, 20);
-			this.SigninText.TabIndex = 1;
-			this.SigninText.Text = "Sign in as a Producer or Consumer";
+			this.RegisterText.AutoSize = true;
+			this.RegisterText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.RegisterText.ForeColor = System.Drawing.SystemColors.Control;
+			this.RegisterText.Location = new System.Drawing.Point(247, 107);
+			this.RegisterText.Name = "RegisterText";
+			this.RegisterText.Size = new System.Drawing.Size(254, 20);
+			this.RegisterText.TabIndex = 1;
+			this.RegisterText.Text = "Sign in as a Producer or Consumer";
 			// 
 			// UsernameText
 			// 
@@ -154,7 +154,7 @@
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.UsernameBox);
 			this.Controls.Add(this.UsernameText);
-			this.Controls.Add(this.SigninText);
+			this.Controls.Add(this.RegisterText);
 			this.Controls.Add(this.LogoText);
 			this.MaximumSize = new System.Drawing.Size(800, 490);
 			this.MinimumSize = new System.Drawing.Size(800, 490);
@@ -168,7 +168,7 @@
 		#endregion
 
 		private System.Windows.Forms.Label LogoText;
-		private System.Windows.Forms.Label SigninText;
+		private System.Windows.Forms.Label RegisterText;
 		private System.Windows.Forms.Label UsernameText;
 		private System.Windows.Forms.TextBox UsernameBox;
 		private System.Windows.Forms.Label label1;
