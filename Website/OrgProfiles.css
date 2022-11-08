@@ -1,0 +1,78 @@
+body
+{
+    background-color: rgb(68, 66, 66);
+}
+.carrot
+{
+    float: left;
+    margin-top: 0px;
+}
+.headings
+{
+    height: 50px;
+}
+h1 
+{
+    color: rgb(217, 144, 8);
+    font-size: 45px;
+    margin-left: 10px;
+    margin-top: 0px;
+    float: left;
+    font-family: 'Brush Script MT', cursive;
+}
+button
+{
+    background-color: rgb(61, 61, 243);
+    border: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    position: absolute;
+    right: 50px;
+    top: 50px;
+}
+.orgs
+{
+    height: 500px;
+    margin-top: 50px;
+}
+img
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    object-fit: scale-down;
+}
+p
+{
+    text-align: center;
+}
+.org1
+{
+    float: left;
+    background-color: white;
+    width: 25%;
+    height: 500px;
+    margin-left: 75px;
+}
+.org2
+{
+    float: left;
+    background-color: white;
+    width: 25%;
+    height: 500px;
+    margin-left: 75px;
+}
+.org3
+{
+    float: left;
+    background-color: white;
+    width: 25%;
+    height: 500px;
+    margin-left: 75px;
+}
+.result
+{
+    color: white;
+}
