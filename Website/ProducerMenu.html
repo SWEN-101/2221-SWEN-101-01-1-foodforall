@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producer Menu</title>
+</head>
+<body>
+    <div class="image">
+        <style>
+            span {
+                color: rgb(231, 153, 0);
+                font-size: 48px;
+                font-family: Comic Sans MS;
+                padding-top: var(--dl-space-space-twounits);
+                padding-left: var(--dl-space-space-twounits);
+                text-decoration: underline;
+            }
+        </style>
+        <span>Food For All</span>
+        <img src="Carrot.png" alt="a carrot">
+    </div>
+
+    <div class="buttons">
+        <div class="button-layout"> 
+            <button class="b1">Add Product</button>
+            <button class="b2">Browse nearby Customers</button>
+            <button class="b3">Browse all food requests</button>
+        </div>
+   
+        <div class="button-layout"> 
+            <button class="b1">Check Statistics</button>
+            <button class="b2">Check Your Current Products on Offer</button>
+            <button class="b3">Search for specific organization</button>
+            </div>
+    </div>
+    
+
+    <style>
+        body{
+            background-color: dimgray;
+        }
+
+        .buttons{
+            margin-top: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .button-layout{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+
+        }
+
+        button{
+            flex: 1 1 auto;
+            width: 125px;
+            height: 70px;
+        }
+    </style>
+</body>
+</html>
