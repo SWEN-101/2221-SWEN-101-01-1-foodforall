@@ -1,4 +1,3 @@
-browse food offers
 request food
 producer statistics
 consumer statistics
