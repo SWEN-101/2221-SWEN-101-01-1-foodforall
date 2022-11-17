@@ -1,0 +1,12 @@
+.food-for-all {
+    color: rgb(231, 153, 0);
+    font-size: 48px;
+    font-family: Comic Sans MS;
+    padding-top: var(--dl-space-space-twounits);
+    padding-left: var(--dl-space-space-twounits);
+    text-decoration: underline;
+}
+
+/* .logo {
+    display: ;
+} */

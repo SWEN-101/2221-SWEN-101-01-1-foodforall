@@ -11,15 +11,7 @@ body
 {
     height: 50px;
 }
-h1 
-{
-    color: rgb(217, 144, 8);
-    font-size: 45px;
-    margin-left: 10px;
-    margin-top: 0px;
-    float: left;
-    font-family: 'Brush Script MT', cursive;
-}
+
 button
 {
     background-color: rgb(61, 61, 243);
@@ -33,21 +25,15 @@ button
 }
 .orgs
 {
-    height: 500px;
+    height: 650px;
     margin-top: 50px;
 }
-img
-{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 75%;
-    object-fit: scale-down;
-}
+
 p
 {
     text-align: center;
 }
+
 .org1
 {
     float: left;
