@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../combined/universal.css">
     <title>Producer Menu</title>
 </head>
 <body>
@@ -12,17 +13,19 @@
         <img src="../images/Carrot.png">
     </div>
 
+    <button class="menu-button"> Go Back to Menu</button>
+
     <div class="buttons">
         <div class="button-layout"> 
             <button class="b1">Add Product</button>
-            <button class="b2">Browse nearby Customers</button>
-            <button class="b3">Browse all food requests</button>
+            <button class="b1">Browse nearby Customers</button>
+            <button class="b1">Browse all food requests</button>
         </div>
    
         <div class="button-layout"> 
             <button class="b1">Check Statistics</button>
-            <button class="b2">Check Your Current Products on Offer</button>
-            <button class="b3">Search for specific organization</button>
+            <button class="b1">Check Your Current Products on Offer</button>
+            <button class="b1">Search for specific organization</button>
             </div>
     </div>
     
@@ -49,10 +52,13 @@
 
         }
 
-        button{
+        .b1{
             flex: 1 1 auto;
             width: 125px;
             height: 70px;
+            border: 0ch;
+            background-color: rgb(61, 61, 243);
+            color: white;
         }
     </style>
 </body>

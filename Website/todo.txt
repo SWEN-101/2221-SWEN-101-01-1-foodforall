@@ -1,8 +1,6 @@
-add product confirmation
 browse food offers
 request food
 producer statistics
 consumer statistics
 consumer orders
-add request confirmation
 consumers nearby

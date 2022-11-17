@@ -142,13 +142,7 @@
 .add-product-text {
   font-size: 24px;
 }
-.add-product-back-to-menu-button {
-  top: 32px;
-  color: rgb(255, 255, 255);
-  right: 32px;
-  position: absolute;
-  background-color: rgb(66, 133, 244);
-}
+
 .add-product-text3 {
   font-size: 24px;
 }
