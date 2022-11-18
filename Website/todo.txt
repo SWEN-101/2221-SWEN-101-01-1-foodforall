@@ -1,5 +1,3 @@
 request food
-producer statistics
-consumer statistics
 consumer orders
 consumers nearby
