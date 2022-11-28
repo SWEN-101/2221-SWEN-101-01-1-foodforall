@@ -1,138 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
-    <link rel="stylesheet" href="../combined/universal.css">
-</head>
-<body>
-    <style>
-        .switch {
-            position: relative;
-            display: inline-block;
-            width: 60px;
-            height: 34px;
-        }
-
-            .switch input {
-                opacity: 0;
-                width: 0;
-                height: 0;
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Search Organizations</title>
+        <link rel="stylesheet" href="../combined/universal.css">
+    </head>
+    <body>
+        <style>
+            .switch {
+                position: relative;
+                display: inline-block;
+                width: 60px;
+                height: 34px;
             }
 
-        .slider {
-            position: absolute;
-            cursor: pointer;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: #2196F3;
-            -webkit-transition: .4s;
-            transition: .4s;
-        }
+                .switch input {
+                    opacity: 0;
+                    width: 0;
+                    height: 0;
+                }
 
-            .slider:before {
+            .slider {
                 position: absolute;
-                content: "";
-                height: 26px;
-                width: 26px;
-                left: 4px;
-                bottom: 4px;
-                background-color: white;
+                cursor: pointer;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: #2196F3;
                 -webkit-transition: .4s;
                 transition: .4s;
             }
 
-        input:checked + .slider {
-            background-color: #2196F3;
-        }
+                .slider:before {
+                    position: absolute;
+                    content: "";
+                    height: 26px;
+                    width: 26px;
+                    left: 4px;
+                    bottom: 4px;
+                    background-color: white;
+                    -webkit-transition: .4s;
+                    transition: .4s;
+                }
 
-        input:focus + .slider {
-            box-shadow: 0 0 1px #2196F3;
-        }
-
-        input:checked + .slider:before {
-            -webkit-transform: translateX(26px);
-            -ms-transform: translateX(26px);
-            transform: translateX(26px);
-        }
-
-        /* Rounded sliders */
-        .slider.round {
-            border-radius: 34px;
-        }
-
-            .slider.round:before {
-                border-radius: 50%;
+            input:checked + .slider {
+                background-color: #2196F3;
             }
 
-        body {
-            background-color: dimgray;
+            input:focus + .slider {
+                box-shadow: 0 0 1px #2196F3;
+            }
 
-        }
+            input:checked + .slider:before {
+                -webkit-transform: translateX(26px);
+                -ms-transform: translateX(26px);
+                transform: translateX(26px);
+            }
 
-        label {
-            color: white;
-        }
+            /* Rounded sliders */
+            .slider.round {
+                border-radius: 34px;
+            }
 
-        h3 {
-            color: white;
-        }
+                .slider.round:before {
+                    border-radius: 50%;
+                }
 
-        h2 {
-            color: white;
-        }
+            body {
+                background-color: dimgray;
 
-        form {
-            margin: auto;
-            width: 50%;
-            margin-top: 100px;
-        }
-    </style>
+            }
 
-   <div class="logo">
-        <span class="food-for-all">Food For All</span>
-        <img src="../images/Carrot.png">
-   </div>
+            label {
+                color: white;
+            }
 
-    <form>
-        <h3>Search Organizations</h3>
+            h3 {
+                color: white;
+            }
+
+            h2 {
+                color: white;
+            }
+
+            form {
+                margin: auto;
+                width: 50%;
+                margin-top: 100px;
+            }
+        </style>
+
+       <div class="logo">
+            <span class="food-for-all">Food For All</span>
+            <img src="../images/Carrot.png">
+       </div>
+       <button class="menu-button" onclick="backtohome()">Go Back to Menu</button>
+
+       <script>
+           function backtohome() {
+               // TODO: replace google with the proper page
+               window.location.href = 'https://www.google.com';
+           }
+       </script>
 
 
-        <label>Organization Name:</label>
-        <input type="text" name="OrgName" value="">
-        <br> <br>
-        <input type="submit" value="Search">
+        <form>
+            <h3>Search Organizations</h3>
 
-    </form>
 
-    <form>
+            <label>Organization Name:</label>
+            <input type="text" name="OrgName" value="">
+            <br> <br>
+            <input type="submit" value="Search">
 
-        <h3>Advanced Search</h3>
+        </form>
 
-        <label>Organization Name:</label>
-        <input type="text" name="OrgName" value="">
-        <br> <br>
+        <form>
 
-        <label>Organization Type:</label>
-        <input type="text" name="OrgType" value="">
-        <br> <br>
+            <h3>Advanced Search</h3>
 
-        <label>Organization Distance:</label>
-        <input type="text" name="OrgDist">
-        <br><br>
+            <label>Organization Name:</label>
+            <input type="text" name="OrgName" value="">
+            <br> <br>
 
-        <label>Organization Rating:</label>
-        <input type="text" name="OrgRating" value="">
-        <br> <br>
+            <label>Organization Type:</label>
+            <input type="text" name="OrgType" value="">
+            <br> <br>
 
-        <input type="submit" value="Advanced Search">
+            <label>Organization Distance:</label>
+            <input type="text" name="OrgDist">
+            <br><br>
 
-    </form>
-</body>
+            <label>Organization Rating:</label>
+            <input type="text" name="OrgRating" value="">
+            <br> <br>
+
+            <input type="submit" value="Advanced Search">
+
+        </form>
+    </body>
 </html>
 
 
