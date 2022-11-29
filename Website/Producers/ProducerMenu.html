@@ -8,6 +8,7 @@
     <title>Producer Menu</title>
 </head>
 <body>
+    <script type="text/javascript" src="../global.js"></script> 
     <div class="logo">
         <span class="food-for-all">Food For All</span>
         <img src="../images/Carrot.png">
@@ -21,17 +22,51 @@
 
     <div class="buttons">
         <div class="button-layout">
-            <button class="b1">Add Product</button>
-            <button class="b1">Browse nearby Customers</button>
-            <button class="b1">Browse all food requests</button>
+            <button class="b1" onclick="gotoPage(0)">Add Product</button>
+            <button class="b1" onclick="gotoPage(1)">Browse nearby Customers</button>
+            <button class="b1" onclick="gotoPage(2)">Browse all food requests</button>
         </div>
 
         <div class="button-layout">
-            <button class="b1">Check Statistics</button>
-            <button class="b1">Check Your Current Products on Offer</button>
-            <button class="b1">Search for specific organization</button>
+            <button class="b1" onclick="gotoPage(3)">Check Statistics</button>
+            <button class="b1" onclick="gotoPage(4)">Check Your Current Products on Offer</button>
+            <button class="b1" onclick="gotoPage(5)">Search for specific organization</button>
         </div>
     </div>
+
+    <script>
+        function gotoPage(number)
+        {
+            switch (number)
+            {
+                case 0:
+                    window.location.href = "add-product/add-product.html";
+                    break;
+
+                case 1:
+                    // todo, this page doesn't exist yet
+                    break;
+
+                case 2:
+                    // todo, this page doesn't exist yet
+                    break;
+
+                case 3:
+                    window.location.href = "ProducerStatistics.html";
+                    break;
+
+                case 4:
+                    window.location.href = "YourProducts.html";
+                    break;
+
+                case 5:
+                    window.location.href = "../combined/SearchOrganizations.html";
+                    break;
+
+                default:
+            }
+        }
+    </script>
 
 
     <style>

@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="../combined/universal.css">
 </head>
 <body>
+    <script type="text/javascript" src="../global.js"></script> 
+
     <style>
         .switch {
             position: relative;
@@ -124,13 +126,20 @@
 
         <label>Producer</label>
         <label class="switch">
-            <input type="checkbox">
+            <input type="checkbox" id="switchbox">
             <span class="slider round"></span>
         </label>
         <label>Consumer</label>
         <br> <br>
 
-        <input type="submit" value="Register">
+        <input type="submit" value="Register" onclick="register()">
+
+        <script>
+            function register()
+            {
+                // todo: make this actually    work
+            }
+        </script>
 
     </form>
 </body>

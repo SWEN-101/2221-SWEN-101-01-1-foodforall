@@ -8,6 +8,7 @@
     <title>RequestConfirmation</title>
 </head>
 <body>
+    <script type="text/javascript" src="../global.js"></script> 
     <div class="logo">
         <span class="food-for-all">Food For All</span>
         <img src="../images/Carrot.png">
@@ -16,7 +17,17 @@
     <div class="container">
         
         <h2>Your request has been submitted</h2>
-        <button>Go Back To Menu</button>
+        <button onclick="backtohome()">Go Back To Menu</button>
+
+        <script>
+            function backtohome()
+            {
+                if (producer)
+                    window.location.href = "../Producers/ProducerMenu.html";
+                else
+                    window.location.href = "../Consumer/ConsumerMenu.html";
+            }
+        </script>
     </div>
 
     <style>

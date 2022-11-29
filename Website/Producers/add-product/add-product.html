@@ -3,6 +3,7 @@
     <link rel="icon" type="image/x-icon" href="../Carrot.png">
 </head>
 <div>
+    <script type="text/javascript" src="../../global.js"></script> 
   <link href="./add-product.css" rel="stylesheet" />
   <link rel="stylesheet" href="../../combined/universal.css">
   <div class="add-product-container">
@@ -20,7 +21,7 @@
       </div>
       <button class="add-product-add-button">
           <span class="add-product-text">
-              <span>Add</span>
+              <span onclick="add()">Add</span>
               <br />
           </span>
       </button>
@@ -39,10 +40,25 @@
       </div>
       <button class="add-product-add-button2">
           <span class="add-product-text">
-              <span>Add</span>
+              <span onclick="add()">Add</span>
               <br />
           </span>
       </button>
-      <button class="menu-button">Go Back to Menu</button>
+      <button class="menu-button" onclick="backtohome()">Go Back to Menu</button>
+
+      <script>
+        function backtohome()
+        {
+            if (producer)
+                window.location.href = "../../Producers/ProducerMenu.html";
+            else
+                window.location.href = "../../Consumer/ConsumerMenu.html";
+        }
+
+        function add()
+        {
+            window.location.href = "../AddProductConfirmation.html";
+        }
+    </script>
   </div>
 </div>

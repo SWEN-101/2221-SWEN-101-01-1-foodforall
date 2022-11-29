@@ -8,6 +8,9 @@
     <title>FoodForAll</title>
 </head>
 <body>
+
+    <script type="text/javascript" src="../global.js"></script> 
+
     <style>
         body {
             background-color:dimgray;
@@ -64,11 +67,23 @@
             <br> <br>
 
 
-            <input type="submit" value="Sign in" style="float: left; font-size: 20px">
+            <input type="submit" value="Sign in" style="float: left; font-size: 20px" oninput="signin()">
             <p style="float:left; margin:auto; padding-left:15px; font-size:22px">Don’t have an account?</p>
             <a href="Register.html" style="margin: auto; padding: 10px; font-size:22px">Register!</a>
         </form>
     </div>
+
+    <script>
+        function signin()
+        {
+            // could not get this working
+
+            if (producer)
+                window.location.href = "../Producers/ProducerMenu.html";
+            else
+                window.location.href = "../Consumer/ConsumerMenu.html";
+        }
+    </script>
     
 </body>
 </html>

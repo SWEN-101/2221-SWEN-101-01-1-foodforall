@@ -8,6 +8,7 @@
     <title>Consumer Menu</title>
 </head>
 <body>
+    <script type="text/javascript" src="../global.js"></script> 
     <div class="logo">
         <span class="food-for-all">Food For All</span>
         <img src="../images/Carrot.png" alt="a carrot">
@@ -21,18 +22,51 @@
 
     <div class="buttons">
         <div class="button-layout">
-            <button class="b1">Request Food</button>
-            <button class="b1">Browse all Organization Profiles</button>
-            <button class="b1">Browse by all Food Offers</button>
+            <button class="b1" onclick="gotoPage(0)">Request Food</button>
+            <button class="b1" onclick="gotoPage(1)">Browse all Organization Profiles</button>
+            <button class="b1" onclick="gotoPage(2)">Browse by all Food Offers</button>
         </div>
 
         <div class="button-layout">
-            <button class="b1">Check Statistics</button>
-            <button class="b1">Check Your Current request on Offer</button>
-            <button class="b1">Search for specific organization</button>
+            <button class="b1" onclick="gotoPage(3)">Check Statistics</button>
+            <button class="b1" onclick="gotoPage(4)">Check Your Current request on Offer</button>
+            <button class="b1" onclick="gotoPage(5)">Search for specific organization</button>
         </div>
     </div>
 
+    <script>
+        function gotoPage(index)
+        {
+            switch (index)
+            {
+                case 0:
+                    // todo, this page doesn't exist yet
+                    break;
+
+                case 1:
+                    window.location.href = "../combined/OrgProfiles/OrgProfiles.html";
+                    break;
+
+                case 2:
+                    window.location.href = "../combined/BrowseFoodOffer.html";
+                    break;
+
+                case 3:
+                    window.location.href = "ConsumerStatistics.html";
+                    break;
+
+                case 4:
+                    // todo, this page doesn't exist yet
+                    break;
+
+                case 5:
+                    window.location.href = "../combined/SearchOrganizations.html";
+                    break;
+                
+                default:
+            }
+        }
+    </script>
 
     <style>
         body {
