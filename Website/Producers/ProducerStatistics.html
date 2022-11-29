@@ -20,10 +20,13 @@
    <script>
         function backtohome()
         {
-            if (producer)
+            if (sessionStorage.getItem("producer") == "true")
                 window.location.href = "../Producers/ProducerMenu.html";
             else
+            {
+                alert(sessionStorage.getItem("producer"));
                 window.location.href = "../Consumer/ConsumerMenu.html";
+            }
         }
     </script>   
 

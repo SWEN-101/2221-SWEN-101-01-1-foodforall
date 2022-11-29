@@ -78,10 +78,10 @@
         {
             if (value == "producer") {
                 window.location.href = "../Producers/ProducerMenu.html";
-                producer = true;
+                sessionStorage.setItem("producer", true);
             } else {
                 window.location.href = "../Consumer/ConsumerMenu.html";
-                producer = false;
+                sessionStorage.setItem("producer", false);
             }
         }
     </script>
