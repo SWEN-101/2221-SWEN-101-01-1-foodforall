@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="../combined/universal.css">
     </head>
     <body>
-        <script type="text/javascript" src="../global.js"></script> 
+        <script type="text/javascript" src="../global.js"></script>
         <style>
             .switch {
                 position: relative;
@@ -72,7 +72,6 @@
 
             body {
                 background-color: dimgray;
-
             }
 
             label {
@@ -94,15 +93,14 @@
             }
         </style>
 
-       <div class="logo">
+        <div class="logo">
             <span class="food-for-all">Food For All</span>
             <img src="../images/Carrot.png">
-       </div>
-       <button class="menu-button" onclick="backtohome()">Go Back to Menu</button>
+        </div>
+        <button class="menu-button" onclick="backtohome()">Go Back to Menu</button>
 
-       <script>
-            function backtohome()
-            {
+        <script>
+            function backtohome() {
                 if (producer)
                     window.location.href = "../Producers/ProducerMenu.html";
                 else
@@ -111,19 +109,19 @@
         </script>
 
 
-        <form>
+        <div>
             <h3>Search Organizations</h3>
 
 
             <label>Organization Name:</label>
             <input type="text" name="OrgName" value="">
             <br> <br>
-            <input type="submit" value="Search">
+            <button type="submit" onclick="orgprofiles()">Search</button>
+        </div>
+        
 
-        </form>
-
-        <form>
-
+        
+        <div>
             <h3>Advanced Search</h3>
 
             <label>Organization Name:</label>
@@ -142,9 +140,15 @@
             <input type="text" name="OrgRating" value="">
             <br> <br>
 
-            <input type="submit" value="Advanced Search">
+            <button type="submit" onclick="orgprofiles()">Advanced Search</button>
+        </div>
+        
 
-        </form>
+        <script>
+            function orgprofiles() {
+                window.location.href = "../combined/OrgProfiles/OrgProfiles.html";
+            }
+        </script>
     </body>
 </html>
 
