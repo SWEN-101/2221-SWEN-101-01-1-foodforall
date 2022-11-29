@@ -8,39 +8,72 @@
     <title>Producer Menu</title>
 </head>
 <body>
+    <script type="text/javascript" src="../global.js"></script> 
     <div class="logo">
         <span class="food-for-all">Food For All</span>
         <img src="../images/Carrot.png">
     </div>
 
-    <button class="menu-button"> Go Back to Menu</button>
+    <form action="../combined/index.html">
+        <input type="submit" class="menu-button" value="Sign Out">
+    </form>
 
     <div>
-        <h2 style="color: white; margin: auto; width: 10%">Producer Menu</h2>
+        <h2 style="color: white; margin: auto; width: 20%">Producer Menu</h2>
     </div>
 
     <div class="buttons">
         <div class="button-layout">
-            <button class="b1">Add Product</button>
-            <button class="b1">Browse nearby Customers</button>
-            <button class="b1">Browse all food requests</button>
+            <button class="b1" onclick="gotoPage(0)">Add Product</button>
+            <button class="b1" onclick="gotoPage(1)">Browse nearby Customers</button>
+            <button class="b1" onclick="gotoPage(2)">Browse all food requests</button>
         </div>
 
         <div class="button-layout">
-            <button class="b1">Check Statistics</button>
-            <button class="b1">Check Your Current Products on Offer</button>
-            <button class="b1">Search for specific organization</button>
+            <button class="b1" onclick="gotoPage(3)">Check Statistics</button>
+            <button class="b1" onclick="gotoPage(4)">Check Your Current Products on Offer</button>
+            <button class="b1" onclick="gotoPage(5)">Search for specific organization</button>
         </div>
     </div>
 
+    <script>
+        function gotoPage(number)
+        {
+            switch (number)
+            {
+                case 0:
+                    window.location.href = "add-product/add-product.html";
+                    break;
+
+                case 1:
+                    window.location.href = "ConsumersNearby.html";
+                    break;
+
+                case 2:
+                    window.location.href = "BrowseFoodRequests.html";
+                    break;
+
+                case 3:
+                    window.location.href = "ProducerStatistics.html";
+                    break;
+
+                case 4:
+                    window.location.href = "YourProducts.html";
+                    break;
+
+                case 5:
+                    window.location.href = "../combined/SearchOrganizations.html";
+                    break;
+
+                default:
+            }
+        }
+    </script>
+
 
     <style>
-        body {
-            background-color: dimgray;
-        }
-
         .buttons {
-            margin-top: 200px;
+            margin-top: 150px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -57,7 +90,7 @@
 
         .b1 {
             flex: 1 1 auto;
-            width: 225px;
+            width: 400px;
             height: 100px;
             border: 0ch;
             background-color: rgb(61, 61, 243);

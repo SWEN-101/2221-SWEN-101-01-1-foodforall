@@ -9,12 +9,23 @@
     </head>
 
     <body>
+        <script type="text/javascript" src="../global.js"></script> 
         <div class="logo">
             <span class="food-for-all">Food For All</span>
             <img src="../images/Carrot.png">
         </div>
 
-        <button class="menu-button">Go Back to Menu</button>
+        <button class="menu-button" onclick="backtohome()">Go Back to Menu</button>
+
+        <script>
+            function backtohome()
+            {
+                if (sessionStorage.getItem("producer") == "true")
+                    window.location.href = "../Producers/ProducerMenu.html";
+                else
+                    window.location.href = "../Consumer/ConsumerMenu.html";
+            }
+        </script>
 
         <div class="container">
             <h2 style="color:white">Your Products on Offer</h2>
