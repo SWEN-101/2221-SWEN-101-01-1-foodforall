@@ -55,30 +55,34 @@
     </div>
 
     <div class="signin">
-            <h2 style="padding-left:10px">Sign in to FoodForAll</h2>
+        <h2 style="padding-left:10px">Sign in to FoodForAll</h2>
 
-            <label style="font-size: 20px">Username:</label>
-            <input type="text" name="Username" value="">
-            <br> <br>
+        <label style="font-size: 20px">Username:</label>
+        <input type="text" name="Username" value="">
+        <br> <br>
 
-            <label style="font-size: 20px">Password:</label>
-            <input type="text" name="Password" minlength="5" value="">
-            <br> <br>
+        <label style="font-size: 20px">Password:</label>
+        <input type="text" name="Password" minlength="5" value="">
+        <br> <br>
 
 
-            <!-- <input type="submit" value="Sign in" style="float: left; font-size: 20px"> -->
-            <button type="submit" value="Sign in" style="float: left; font-size: 20px" onclick="signin()">Sign In</button>
-            <p style="float:left; margin:auto; padding-left:15px; font-size:22px">Don’t have an account?</p>
-            <a href="Register.html" style="margin: auto; padding: 10px; font-size:22px">Register!</a>
+        <!-- <input type="submit" value="Sign in" style="float: left; font-size: 20px"> -->
+        <button type="submit" value="Sign in" style="float: left; font-size: 20px" onclick="signin('consumer')">Sign In Consumer</button>
+        <button type="submit" value="Sign in" style="float: left; font-size: 20px" onclick="signin('producer')">Sign In Producer</button>
+        <p style="float:left; margin:auto; padding-left:15px; font-size:22px">Don’t have an account?</p>
+        <a href="Register.html" style="margin: auto; padding: 10px; font-size:22px">Register!</a>
     </div>
 
     <script>
-        function signin()
+        function signin(value)
         {
-            if (producer)
+            if (value == "producer") {
                 window.location.href = "../Producers/ProducerMenu.html";
-            else
+                producer = true;
+            } else {
                 window.location.href = "../Consumer/ConsumerMenu.html";
+                producer = false;
+            }
         }
     </script>
     
