@@ -27,7 +27,11 @@
             }
         </script>
 
-       <div class="sorting">
+        <button class="menu-button">Go Back to Menu</button>
+
+        <h2 style="color:white;width:20%;margin:auto">Browse Food Offers</h2>
+
+        <div class="sorting">
             <form action="action_page.php">
                 <label for="sorting">Sort By</label>
                 <select name="sorting" id="sorting">
@@ -37,16 +41,16 @@
                     <option value="name">Name</option>
                 </select>
             </form>
-       </div>
+        </div>
 
-       <div class="orgs">
+        <div class="orgs">
             <div class="org">
-                    <img class="org-img" src="../images/costsave.png" alt="a logo">
-                    <div class="txt-holder">
-                        <p class="txt-info">Offering: 1 corn kernel</p>
-                        <p class="txt-info">Henrietta NY</p>
-                        <p class="txt-info">1 mi away <a href="https://www.google.com/maps">Directions</a></p>
-                    </div>
+                <img class="org-img" src="../images/costsave.png" alt="a logo">
+                <div class="txt-holder">
+                    <p class="txt-info">Offering: 1 corn kernel</p>
+                    <p class="txt-info">Henrietta NY</p>
+                    <p class="txt-info">1 mi away <a href="https://www.google.com/maps">Directions</a></p>
+                </div>
             </div>
 
             <div class="org">
@@ -95,86 +99,83 @@
             </div>
 
             <!-- <div class="org">
-                Hi Hello
-            </div>
+            Hi Hello
+        </div>
 
-            <div class="org">
-                Hi Hello
-            </div>
+        <div class="org">
+            Hi Hello
+        </div>
 
-            <div class="org">
-                Hi Hello
-            </div> -->
-       </div>
+        <div class="org">
+            Hi Hello
+        </div> -->
+        </div>
 
-       <div class="results">
+        <div class="results">
             <span class="results-span" id="1">Showing 1-6 of 40</span>
             <span class="results-span" id="2">&#60 <u>1</u> <u>2</u> <u>3</u> ... <u>7</u> &#62</span>
 
-       </div>
+        </div>
 
-       <style>
-        .orgs{
-            display: grid;
-            grid-template-columns: 475px 100px;
-            margin-top: 4%;
-            margin-left: 15%;
-            gap: 65px 100px;
-        }
+        <style>
+            .orgs {
+                display: grid;
+                grid-template-columns: 475px 100px;
+                margin-top: 4%;
+                margin-left: 15%;
+                gap: 65px 100px;
+            }
 
-        .org{
-            background-color: white;
-            display: flex;
-        }
+            .org {
+                background-color: white;
+                display: flex;
+            }
 
-        .txt-holder{
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-        }
+            .txt-holder {
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+            }
 
-        p.txt-info{
-            margin: 0;
-            width: 150px;
-            height: 30px;
-            font-size: 15px;
-            background-color: white;
-        }
+            p.txt-info {
+                margin: 0;
+                width: 150px;
+                height: 30px;
+                font-size: 15px;
+                background-color: white;
+            }
 
-        .org-img{
-            float: left;
-            height: 90px;
-            width: auto;
-        }
+            .org-img {
+                float: left;
+                height: 90px;
+                width: auto;
+            }
 
-        .sorting {
-            margin-left: 45%;
-            margin-top: 75px;
-            font-size: 25px;
-            color: white;
-        }
+            .sorting {
+                margin-left: 45%;
+                margin-top: 75px;
+                font-size: 25px;
+                color: white;
+            }
 
-        #sorting{
-            size: 50px 15px;
-            height: 30px;
-            font-size: 20px;
-            background-color: rgb(61, 61, 243);
-            color: white;
-        }
+            #sorting {
+                size: 50px 15px;
+                height: 30px;
+                font-size: 20px;
+                background-color: rgb(61, 61, 243);
+                color: white;
+            }
 
-        .results{
-            margin-left: 38%;
-            color: white;
-            font-size: 25px;
-            margin-top: 75px;
-        }
+            .results {
+                margin-left: 38%;
+                color: white;
+                font-size: 25px;
+                margin-top: 75px;
+            }
 
-        .results-span {
-            padding-left: 12px;
-
-        }
-
-        
-       </style>
+            .results-span {
+                padding-left: 12px;
+            }
+        </style>
     </body>
 </html>

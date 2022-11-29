@@ -14,10 +14,12 @@
         <img src="../images/Carrot.png">
     </div>
 
-    <button class="menu-button"> Go Back to Menu</button>
+    <form action="../combined/index.html">
+        <input type="submit" class="menu-button" value="Go Back to Menu">
+    </form>
 
     <div>
-        <h2 style="color: white; margin: auto; width: 10%">Producer Menu</h2>
+        <h2 style="color: white; margin: auto; width: 20%">Producer Menu</h2>
     </div>
 
     <div class="buttons">
@@ -32,6 +34,20 @@
             <button class="b1" onclick="gotoPage(4)">Check Your Current Products on Offer</button>
             <button class="b1" onclick="gotoPage(5)">Search for specific organization</button>
         </div>
+   
+        <div class="button-layout"> 
+            <form action="ProducerStatistics.html">
+                <input class="b1" type="submit" value="Check Statistics">
+            </form>
+
+            <form action="../combined/BrowseFoodOffer.html">
+                <input class="b1" type="submit" value="Check Your Current Product Offers">
+            </form>
+
+            <form action="../combined/OrgProfiles/OrgProfiles.html">
+                <input class="b1" type="submit" value="Search for Organization">
+            </form>
+         </div>
     </div>
 
     <script>
@@ -70,12 +86,8 @@
 
 
     <style>
-        body {
-            background-color: dimgray;
-        }
-
         .buttons {
-            margin-top: 200px;
+            margin-top: 150px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -92,7 +104,7 @@
 
         .b1 {
             flex: 1 1 auto;
-            width: 225px;
+            width: 400px;
             height: 100px;
             border: 0ch;
             background-color: rgb(61, 61, 243);
