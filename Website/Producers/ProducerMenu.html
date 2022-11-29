@@ -15,7 +15,7 @@
     </div>
 
     <form action="../combined/index.html">
-        <input type="submit" class="menu-button" value="Go Back to Menu">
+        <input type="submit" class="menu-button" value="Sign Out">
     </form>
 
     <div>
@@ -34,20 +34,6 @@
             <button class="b1" onclick="gotoPage(4)">Check Your Current Products on Offer</button>
             <button class="b1" onclick="gotoPage(5)">Search for specific organization</button>
         </div>
-   
-        <div class="button-layout"> 
-            <form action="ProducerStatistics.html">
-                <input class="b1" type="submit" value="Check Statistics">
-            </form>
-
-            <form action="../combined/BrowseFoodOffer.html">
-                <input class="b1" type="submit" value="Check Your Current Product Offers">
-            </form>
-
-            <form action="../combined/OrgProfiles/OrgProfiles.html">
-                <input class="b1" type="submit" value="Search for Organization">
-            </form>
-         </div>
     </div>
 
     <script>
@@ -60,11 +46,11 @@
                     break;
 
                 case 1:
-                    // todo, this page doesn't exist yet
+                    window.location.href = "ConsumersNearby.html";
                     break;
 
                 case 2:
-                    // todo, this page doesn't exist yet
+                    window.location.href = "BrowseFoodRequests.html";
                     break;
 
                 case 3:
