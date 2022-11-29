@@ -33,7 +33,7 @@
   color: rgb(255, 255, 255);
   font-size: 24px;
   align-self: center;
-  margin-top: var(--dl-space-space-threeunits);
+  margin-top: 125px;
   text-align: center;
 }
 .add-product-container1 {
@@ -132,6 +132,14 @@
   background-color: rgb(66, 133, 244);
 }
 .add-product-add-button {
+    top: 400px;
+    left: 760px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    align-self: center;
+    background-color: rgb(66, 133, 244);
+}
+.add-product-add-button2 {
   top: 750px;
   left: 760px;
   color: rgb(255, 255, 255);
