@@ -1,0 +1,45 @@
+.foodlist
+{
+    margin: auto;
+    margin-top: 50px;
+    width: 75%;
+    height: 300px;
+    background-color: white;
+    padding-top: 10px;
+}
+.food1, .food2, .food3, .food4
+{
+    margin: auto;
+    margin-top: 15px;
+    width: 90%;
+    height: 10%;
+    border: 1px solid black;
+    padding: 10px;
+}
+pre
+{
+    margin: auto;
+}
+.request
+{
+    margin: auto;
+    margin-top: 50px;
+    width: 75%;
+    height: 150px;
+}
+table
+{
+    margin: auto;
+}
+input
+{
+    background-color: lightgray;
+}
+.submit
+{
+    background-color: rgb(61, 61, 243);
+    padding: 15px 32px;
+    position: absolute;
+    left: 700px;
+    color: white;
+}
